@@ -6,6 +6,7 @@ An iOS TriggerIO plugin for playing audio files with ducking. Ducking means that
 In this implementation, audio files are expected to be included in the project as resources, and the bundle should be renamed to "audio". I had an issue playing files in my `src` folder, so if you make that work I'd gladly accept a pull request.
 
 Playing a file:
+
 forge.internal.call(
     'audio.play',
     'YOUR_AUDIO_FILE.m4a',
@@ -18,6 +19,7 @@ forge.internal.call(
 );
 
 Listening for file to finish:
+
 forge.internal.addEventListener("audio.finishedPlaying", function () {
     alert("Finished playing audio file!");
 });
